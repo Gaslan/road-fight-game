@@ -9,7 +9,7 @@ const Canvas = {
     width: canvas.width,
     height: canvas.height
   },
-  resize() {
+  init() {
     canvas.width = window.innerWidth
     canvas.height = window.innerHeight
     this.dimensions.width = canvas.width
@@ -80,7 +80,7 @@ canvas.addEventListener('touchstart', function (e) {
 })
 
 window.addEventListener('load', function () {
-  Canvas.resize()
+  Canvas.init()
   Road.init()
   Car.init()
 
