@@ -194,7 +194,7 @@ window.addEventListener('load', function () {
     offsetY = offsetY >= Road.dimensions.height ? 0 : offsetY + speed
     RivalCarManager.cars.forEach(car => car.move())
     requestAnimationFrame(drawFrame)
-  }, 10)
+  }, 15)
 
   window.addEventListener('unload', function () {
     clearInterval(interval)
